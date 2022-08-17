@@ -25,7 +25,7 @@
 }}
 \renewcommand{\section}[1]{%
 {\large\textbf{#1}}\\
-\rule[9pt]{18cm}{.4pt}\vspace{-15pt}%
+\rule[9pt]{18cm}{.4pt}\vspace{-16pt}%
 }
 \newenvironment{mytable}{%
 \begin{tabular}{@{}l@{\hspace{4mm}}l@{}}%
@@ -43,12 +43,12 @@
 \pagestyle{empty}
 
 \begin{document}%
-\begin{tikzpicture}%
+\begin{tikzpicture}[baseline=-9pt]%
 \clip circle (2cm);%
 \node[anchor=center] {\includegraphics[width=4cm]{me}};%
 \end{tikzpicture}%
 \hspace{1cm}%
-\parbox[b]{12cm}{%
+\parbox{13cm}{%
 \begin{tabbing}%
 \hspace{3cm}\=\kill%
 \textbf{{\LARGE Ali Farzanrad}}\\[5mm]
@@ -64,6 +64,10 @@ Phone number: \>
 +98{ }911{ }871{ }3396\\
 \end{tabbing}%
 }
+
+\vspace{-9pt}%
+Senior developer (\textit{high-level and low-level}) and strong
+problem solver (\textit{proven in international competitions}).
 
 \section{Professional Experience}
 
@@ -142,7 +146,7 @@ simple pair of latitude and longitudes.
 Developing an Android app with so many different survey forms.
 
 \begin{innertable}
-\inneritem{\prog}{C\#, JavaScript, C++, und Java}
+\inneritem{\prog}{C\#, JavaScript, C++, and Java}
 \inneritem{\os}{Windows}
 \inneritem{\vcs}{Microsoft Visual SourceSafe}
 \inneritem{\issue}{Company-specific issue tracker}
@@ -190,9 +194,9 @@ programming contest
 }\end{mytable}
 
 \begin{mytable}\myitem{2015}{
-Attendee in
+Attendee in 7\textsuperscript{th}
 \href{http://wscg.aut.ac.ir}
-{7\textsuperscript{th} Winter School on Computational Geometry}
+{Winter School on Computational Geometry}
 \follownote{Amirkabir University of Technology (Tehran Polytechnic)}
 }\end{mytable}
 
