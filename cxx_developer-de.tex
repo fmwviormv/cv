@@ -11,10 +11,7 @@
 \newcommand{\https}[1]{\href{https://#1}{\nolinkurl{#1}}}
 \newcommand{\mailto}[1]{\href{mailto://#1}{\nolinkurl{#1}}}
 \newcommand{\follownote}[1]{--- {\footnotesize\color{violet}#1}}
-\newcommand{\prog}{Programmiersprache:}
-\newcommand{\os}{Betriebssystem:}
-\newcommand{\vcs}{Versionskontrollen:}
-\newcommand{\issue}{Problemverfolgung:}
+\newcommand{\keywords}[1]{\textbf{Schl\"{u}sselw\"{o}rter:} #1}
 \newcommand{\acmicpcnote}[2]{--- {\footnotesize\color{violet}%
 \href{https://icpc.baylor.edu/regionals/finder/#1/standings}%
 {#2}%
@@ -87,12 +84,12 @@ zu Netzwerk-Dienstprogrammen mit Unterst"utzung
 f"ur Autovervollst"andigung und intelligente Fehlerbehandlung
 (mit benutzerfreundlichen Meldungen)
 
-\begin{innertable}
-\inneritem{\prog}{Python 3, und Shellskript}
-\inneritem{\os}{Ubuntu}
-\inneritem{\vcs}{Git}
-\inneritem{\issue}{Gitlab}
-\end{innertable}
+\keywords{%
+	Python, Linux, Ubuntu, Shell-Skript, Docker, Docker Compose,
+	Debian Packages, Git, Gitlab, Gitlab CI, CI/CD, PyLint, MyPy,
+	Unit Test, Integration Test, Microservice, REST, Postman,
+	VIM, Visual Studio Code, Unix Domain Socket, Django, Scrum
+}
 }
 \end{mytable}
 
@@ -107,12 +104,11 @@ Der Algorithmus ist zust"andig f"ur die Suche nach der bestm"oglichen
 Auswahl und der Ressourcen zu finden, um die ben"otigten Produkte
 p"unktlich zu produzieren.
 
-\begin{innertable}
-\inneritem{\prog}{C\#}
-\inneritem{\os}{Windows}
-\inneritem{\vcs}{SVN}
-\inneritem{\issue}{Jira}
-\end{innertable}
+\keywords{%
+	C\#, Visual Studio, MS Windows, MS Windows Server,
+	MS SQL Server, SVN, Jira, Scrum, Algorithmus, T-SQL,
+	.NET Framework, .NET Core, Entity Framework
+}
 }
 \end{mytable}
 
@@ -126,12 +122,12 @@ der ERTMS-Spezifikationen.
 Wir haben Hauptfunktionen f"ur die Verarbeitung und "Ubertragung
 von High-Level-Signalen entwickelt.
 
-\begin{innertable}
-\inneritem{\prog}{C mit Frama-C}
-\inneritem{\os}{Windows}
-\inneritem{\vcs}{TFS}
-\inneritem{\issue}{Microsoft Project}
-\end{innertable}
+\keywords{%
+	C, Frama-C, MISRA C, ISO/IEC 9899, Sicherheitskritische Systeme,
+	Testgetriebener Entwurf, "Uberpr"ufung,
+	Halboffizielle Verifizierung,
+	MS Windows, MS TFS, MS Project
+}
 }
 \end{mytable}
 
@@ -153,12 +149,75 @@ durch Angabe eines einfaches Paar von Breiten- und L"angengraden.
 Die Entwicklung einer Android-App mit vielen verschiedenen
 Umfrageformularen.
 
-\begin{innertable}
-\inneritem{\prog}{C\#, JavaScript, C++, und Java}
-\inneritem{\os}{Windows}
-\inneritem{\vcs}{Microsoft Visual SourceSafe}
-\inneritem{\issue}{Unternehmensspezifische Fehlerverfolgung}
-\end{innertable}
+\keywords{%
+	C\#, HTML, JavaScript, CSS, C++, Java, Visual Studio, Eclipse,
+	Android Studio, Android SDK, MS Visual SourceSafe, Git, ArcGIS,
+	Projektion der Karte, Algorithmus, MS SQL Server, T-SQL, SQLite,
+	Vektor-Karte, Rasterung, MS Windows, MS Windows Server,
+	.NET Framework, ASP .NET, ASP .NET MVC, Entity Framework
+}
+}
+\end{mytable}
+
+\section{Open-Source-Beitrag}
+
+\begin{mytable}
+\myitem{2022}{%
+\textbf{OpenBSD ACME Client Fehler- und L"osungsbericht}
+
+\https{marc.info/?l=openbsd-tech&m=165144451324630}
+
+\keywords{C, OpenBSD, BSD, ACME Client, IETF, RFC}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2021}{%
+\textbf{OpenBSD Disklabel unsicherer Code Bericht}
+
+\https{marc.info/?l=openbsd-tech&m=162447870006984}
+
+\keywords{C, OpenBSD, BSD, Integer-"Uberlauf, Flie"skomma-Vergleich}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2021}{%
+\textbf{Django-Entwicklungsserver Fehler- und L"osungsbericht}
+
+\https{github.com/django/django/pull/14250}
+
+\keywords{Python, Django}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2017}{%
+\textbf{OpenBSD SlowCGI Fehler- und L"osungsbericht}
+
+\https{marc.info/?l=openbsd-tech&m=148336198719403}
+
+\keywords{C, OpenBSD, BSD}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2016}{%
+\textbf{OpenBSD CWM Window Manager Fehler- und L"osungsbericht}
+
+\https{marc.info/?l=openbsd-misc&m=147345347104702}
+
+\keywords{C, YACC, OpenBSD, BSD, X, Xorg, Fenster-Manager}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2015}{%
+\textbf{Doom 3 auf OpenBSD Build Problem und L"osungsbericht}
+
+\https{github.com/dhewm/dhewm3/pull/113}
+
+\keywords{C++, CMake, OpenBSD, idTech4, Spiel-Engine}
 }
 \end{mytable}
 
@@ -171,8 +230,6 @@ Umfrageformularen.
 Technische Universit"at Amirkabir (Polytechnikum Teheran), Teheran, Iran
 }
 \end{mytable}
-
-\pagebreak
 
 \section{Auszeichnungen}
 

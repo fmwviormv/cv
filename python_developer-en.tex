@@ -10,10 +10,7 @@
 \newcommand{\https}[1]{\href{https://#1}{\nolinkurl{#1}}}
 \newcommand{\mailto}[1]{\href{mailto://#1}{\nolinkurl{#1}}}
 \newcommand{\follownote}[1]{--- {\footnotesize\color{violet}#1}}
-\newcommand{\prog}{Programming Lang.:}
-\newcommand{\os}{Operating System:}
-\newcommand{\vcs}{Version Controls:}
-\newcommand{\issue}{Issue Tracking:}
+\newcommand{\keywords}[1]{\textbf{Keywords:} #1}
 \newcommand{\acmicpcnote}[2]{--- {\footnotesize\color{violet}%
 \href{https://icpc.baylor.edu/regionals/finder/#1/standings}%
 {#2}%
@@ -83,12 +80,12 @@ User commands varies from system configuration and diagnostic
 to network utilities with support for auto-completion and
 smart error handling (with nice user understandable messages).
 
-\begin{innertable}
-\inneritem{\prog}{Python 3, and Shell script}
-\inneritem{\os}{Ubuntu}
-\inneritem{\vcs}{Git}
-\inneritem{\issue}{Gitlab}
-\end{innertable}
+\keywords{%
+	Python, Linux, Ubuntu, Shell script, Docker, Docker Compose,
+	Debian Packages, Git, Gitlab, Gitlab CI, CI/CD, PyLint, MyPy,
+	Unit Test, Integration Test, Microservice, REST, Postman,
+	VIM, Visual Studio Code, Unix Domain Socket, Django, Scrum
+}
 }
 \end{mytable}
 
@@ -101,12 +98,11 @@ Developing product-planning algorithm for company's ERP system.
 The algorithm is responsible for finding best selection and
 schedule of resources to produce required products in time.
 
-\begin{innertable}
-\inneritem{\prog}{C\#}
-\inneritem{\os}{Windows}
-\inneritem{\vcs}{SVN}
-\inneritem{\issue}{Jira}
-\end{innertable}
+\keywords{%
+	C\#, Visual Studio, MS Windows, MS Windows Server,
+	MS SQL Server, SVN, Jira, Scrum, Algorithm, T-SQL,
+	.NET Framework, .NET Core, Entity Framework
+}
 }
 \end{mytable}
 
@@ -119,12 +115,11 @@ Developing Train Control System based on ERTMS specifications.
 We were developing core functionalities for processing and
 sending high-level signals.
 
-\begin{innertable}
-\inneritem{\prog}{C with Frama-C}
-\inneritem{\os}{Windows}
-\inneritem{\vcs}{TFS}
-\inneritem{\issue}{Microsoft Project}
-\end{innertable}
+\keywords{%
+	C, Frama-C, MISRA C, ISO/IEC 9899, Safety-critical systems,
+	Test Driven Design, Verification, Semi-formal Verification,
+	MS Windows, MS TFS, MS Project
+}
 }
 \end{mytable}
 
@@ -144,12 +139,75 @@ simple pair of latitude and longitudes.
 
 Developing an Android app with so many different survey forms.
 
-\begin{innertable}
-\inneritem{\prog}{C\#, JavaScript, C++, and Java}
-\inneritem{\os}{Windows}
-\inneritem{\vcs}{Microsoft Visual SourceSafe}
-\inneritem{\issue}{Company-specific issue tracker}
-\end{innertable}
+\keywords{%
+	C\#, HTML, JavaScript, CSS, C++, Java, Visual Studio, Eclipse,
+	Android Studio, Android SDK, MS Visual SourceSafe, Git, ArcGIS,
+	Map projection, Algorithm, MS SQL Server, T-SQL, SQLite,
+	Vector Map, Rasterization, MS Windows, MS Windows Server,
+	.NET Framework, ASP .NET, ASP .NET MVC, Entity Framework
+}
+}
+\end{mytable}
+
+\section{Open Source Contribution}
+
+\begin{mytable}
+\myitem{2022}{%
+\textbf{OpenBSD ACME Client bug and solution report}
+
+\https{marc.info/?l=openbsd-tech&m=165144451324630}
+
+\keywords{C, OpenBSD, BSD, ACME Client, IETF, RFC}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2021}{%
+\textbf{OpenBSD Disklabel unsafe code report}
+
+\https{marc.info/?l=openbsd-tech&m=162447870006984}
+
+\keywords{C, OpenBSD, BSD, Integer Overflow, Floating Point Comparison}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2021}{%
+\textbf{Django develepment server bug and solution report}
+
+\https{github.com/django/django/pull/14250}
+
+\keywords{Python, Django}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2017}{%
+\textbf{OpenBSD SlowCGI bug and solution report}
+
+\https{marc.info/?l=openbsd-tech&m=148336198719403}
+
+\keywords{C, OpenBSD, BSD}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2016}{%
+\textbf{OpenBSD CWM Window Manager bug and solution report}
+
+\https{marc.info/?l=openbsd-misc&m=147345347104702}
+
+\keywords{C, YACC, OpenBSD, BSD, X, Xorg, Window Manager}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2015}{%
+\textbf{Doom 3 on OpenBSD build issue and solution report}
+
+\https{github.com/dhewm/dhewm3/pull/113}
+
+\keywords{C++, CMake, OpenBSD, idTech4, Game Engine}
 }
 \end{mytable}
 
@@ -162,8 +220,6 @@ Developing an Android app with so many different survey forms.
 Amirkabir University of Technology (Tehran Polytechnic), Tehran, Iran
 }
 \end{mytable}
-
-\pagebreak
 
 \section{Awards and Honors}
 
