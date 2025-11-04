@@ -11,6 +11,7 @@
 \usepackage{tikz}
 \usepackage{parskip}
 
+\hypersetup{colorlinks=true, urlcolor=blue}
 \renewcommand{\familydefault}{\sfdefault}
 \newcommand{\https}[1]{\href{https://#1}{\nolinkurl{#1}}}
 \newcommand{\mailto}[1]{\href{mailto://#1}{\nolinkurl{#1}}}
@@ -25,8 +26,9 @@
 {#2}%
 }}
 \renewcommand{\section}[1]{%
+\vspace{6pt}%
 {\large\textbf{#1}}\\
-\rule[9pt]{18cm}{.4pt}\vspace{-16pt}%
+\rule[9pt]{\textwidth}{.4pt}\vspace{-12pt}%
 }
 \newenvironment{mytable}{%
 \begin{tabular}{@{}l@{\hspace{4mm}}l@{}}%
@@ -53,181 +55,150 @@
 \begin{tabbing}%
 \hspace{3cm}\=\kill%
 \textbf{{\LARGE Ali Farzanrad}}\\[5mm]
-Birthdate: \>
-May 10\textsuperscript{th}, 1990\\[1mm]
 E-Mail: \>
 \mailto{ali_farzanrad@riseup.net}\\[1mm]
 GitHub: \>
-\https{github.com/fmwviormv}\\[1mm]
+\href{https://github.com/fmwviormv}{fmwviormv}\\[1mm]
 LinkedIn: \>
-\https{linkedin.com/in/ali-farzanrad-0635959b}\\[1mm]
+\href{%
+https://linkedin.com/in/ali-farzanrad-0635959b}{%
+ali-farzanrad-0635959b}\\[1mm]
 Phone: \>
 +49{ }17634320280\\
 \end{tabbing}%
 }
 
 \vspace{-9pt}%
-Senior developer (\textit{high-level and low-level}) and strong
-problem solver (\textit{proven in international competitions}).
+Senior Software Developer with over 10 years of experience in
+backend development, algorithms, and infrastructure.
+Proven track record in international programming competitions and
+open-source contributions.
+Skilled in Python, C, and system-level development,
+with strong expertise in designing reliable, scalable solutions.
 
 \section{Professional Experience}
 
 \begin{mytable}
 \myitem{2024-09 -- current}{%
 \textbf{Backend Developer} at
-geOps GmbH, Freiburg, Germany.
+geOps GmbH, Freiburg, Germany
 
-Mainly worked on automated 2D line network plan (Bus lines,
-Tram lines, Train lines, ...) generation.
+\href{https://geops.com/}{geOps}
+develops web applications based on geo- and real-time data,
+with focus on public transport, mobility and the environment.
 
-\keywords{%
-	Python, Linux, Ubuntu, Shell script,
-	Git, Gitlab, Gitlab CI, CI/CD, MyPy,
-	Unit Test, Scrum
-}
+My tech stack is: \textbf{Python}, \textbf{Cython}, \textbf{NumPy},
+\textbf{SciPy}, \textbf{MyPy}, \textbf{pytest}, \textbf{Gitlab-CI}
+
+I am responsible for:
+
+\begin{itemize}
+  \item Extend and maintain automated generation of
+  2D line network plans (bus, tram, train),
+  adding new functionality and improving reliability.
+  \item Debug and optimize backend services in
+  \textbf{Python} on \textbf{Linux/Ubuntu}, ensuring stability and performance.
+  \item Contribute to CI/CD workflows with \textbf{GitLab CI},
+  applying \textbf{MyPy} type checking and unit testing for code quality.
+  \item Collaborate in an agile \textbf{Scrum} team to deliver
+  incremental improvements for public transport clients.
+\end{itemize}
 }
 \end{mytable}
 
 \begin{mytable}
 \myitem{2020-04 -- 2022-11}{%
 \textbf{Python Developer} at
-Mahsan co., Tehran, Iran.
+Mahsan Co., Tehran, Iran
 
-Developing command-line interface for company's products,
-specially for firewall management.
-Command-line is responsible for interacting with user through
-system serial console and remote ssh pty session.
-User commands varies from system configuration and diagnostic
-to network utilities with support for auto-completion and
-smart error handling (with nice user understandable messages).
+Mahsan Co.\ is an Iranian Information Technology and Services company that
+designs, develops and sells IT solutions.
 
-\keywords{%
-	Python, Linux, Ubuntu, Shell script, Docker, Docker Compose,
-	Debian Packages, Git, Gitlab, Gitlab CI, CI/CD, PyLint, MyPy,
-	Unit Test, Integration Test, Microservice, REST, Scrum
-}
+My tech stack was: \textbf{Python}, \textbf{Docker}, \textbf{Gitlab-CI},
+\textbf{Django}, \textbf{Django REST framework}, \textbf{PostgreSQL}
+
+I was responsible for:
+
+\begin{itemize}
+  \item Developing a command-line interface for firewall management, enabling
+  configuration and diagnostics via serial console and remote SSH sessions.
+  \item Implemented advanced features such as auto-completion and
+  smart error handling, improving usability for system administrators.
+  \item Containerized services with \textbf{Docker/Docker Compose},
+  automated builds with \textbf{GitLab CI/CD}, and ensured
+  reliability through unit and integration testing.
+\end{itemize}
 }
 \end{mytable}
 
 \begin{mytable}
 \myitem{2019-02 -- 2020-03}{%
-\textbf{Developer} at
-JAM Persia co., Tehran, Iran.
+\textbf{Backend Developer} at
+JAM Persia Co., Tehran, Iran
 
-Developing product-planning algorithm for company's ERP system.
-The algorithm is responsible for finding best selection and
-schedule of resources to produce required products in time.
+My tech stack was: \textbf{C\#}, \textbf{.NET}, \textbf{Entity Framework},
+\textbf{Microsoft SQL Server}
 
-\keywords{%
-	C\#, Visual Studio, MS Windows, MS Windows Server,
-	MS SQL Server, SVN, Jira, Scrum, Algorithm, T-SQL,
-	.NET Framework, .NET Core, Entity Framework
-}
+I was responsible for:
+
+\begin{itemize}
+  \item Designed and implemented product-planning algorithms for ERP system.
+  \item Developed scalable and reliable solutions
+        for optimizing resource scheduling and production timelines.
+  \item Collaborated with cross-functional teams using \textbf{Scrum} and \textbf{Jira}.
+\end{itemize}
 }
 \end{mytable}
 
 \begin{mytable}
 \myitem{2017-01 -- 2018-06}{
-\textbf{Developer} at
-Maharan International co., Tehran, Iran.
+\textbf{Embedded Developer} at
+Maharan International Co.
 
-Developing Train Control System based on ERTMS specifications.
-We were developing core functionalities for processing and
-sending high-level signals.
+\href{https://maharan-co.com/en/}{Maharan International Co.}
+is a professional company in the field of design and manufacturing
+Main line and Urban Railway Signaling systems in the Middle East.
+They have focus on developing \textbf{Safety-critical} solutions
+with strong Validation and Verification processes.
 
-\keywords{%
-	C, Frama-C, MISRA C, ISO/IEC 9899, Safety-critical systems,
-	Test Driven Design, Verification, Semi-formal Verification,
-	Microsoft TFS, Microsoft Project
-}
+My tech stack was: \textbf{C}, \textbf{Frama-C}
+
+I was responsible for:
+
+\begin{itemize}
+  \item Contributed to the development of a Train Control System
+  based on \textbf{ERTMS} specifications.
+  \item Implemented safety-critical modules in \textbf{C},
+  following \textbf{MISRA C} and formal verification practices.
+  \item Applied semi-formal verification to ensure compliance with safety standards.
+\end{itemize}
 }
 \end{mytable}
 
 \begin{mytable}
 \myitem{2012-08 -- 2016-06}{
-\textbf{Developer} at
-Negasht co., Tehran, Iran.
+\textbf{Full-stack Developer} at
+Negasht Co., Tehran, Iran
 
-Developing web-based applications with maps and POI data.
+Negasht Andisheh Sabz offers
+web-based sales and distribution management software, enhancing
+efficiency with multi-branch support and mapping tools.
 
-Developing web-services for generating map tiles.
+My tech stack was: \textbf{C\#}, \textbf{ASP.NET},
+\textbf{Microsoft SQL Server}, \textbf{Java} (for Android),
+\textbf{SQLite}, \textbf{JavaScript}, \textbf{Telerik},
+\textbf{C++}
 
-Developing web-services for generating static maps from vectors.
+I was responsible for:
 
-Developing web-services for finding shortest path by giving a
-simple pair of latitude and longitudes.
-
-Developing an Android app with so many different survey forms.
-
-\keywords{%
-	C\#, HTML, JavaScript, CSS, C++, Java, Visual Studio, Eclipse,
-	Android Studio, Android SDK, MS Visual SourceSafe, Git, ArcGIS,
-	Map projection, Algorithm, MS SQL Server, T-SQL, SQLite,
-	Vector Map, Rasterization, MS Windows, MS Windows Server,
-	.NET Framework, ASP .NET, ASP .NET MVC, Entity Framework
-}
-}
-\end{mytable}
-
-\section{Open Source Contribution}
-
-\begin{mytable}
-\myitem{2022}{%
-\textbf{OpenBSD ACME Client bug and solution report}
-
-\https{marc.info/?l=openbsd-tech&m=165144451324630}
-
-\keywords{C, OpenBSD, BSD, ACME Client, IETF, RFC}
-}
-\end{mytable}
-
-\begin{mytable}
-\myitem{2021}{%
-\textbf{OpenBSD Disklabel unsafe code report}
-
-\https{marc.info/?l=openbsd-tech&m=162447870006984}
-
-\keywords{C, OpenBSD, BSD, Integer Overflow, Floating Point Comparison}
-}
-\end{mytable}
-
-\begin{mytable}
-\myitem{2021}{%
-\textbf{Django develepment server bug and solution report}
-
-\https{github.com/django/django/pull/14250}
-
-\keywords{Python, Django}
-}
-\end{mytable}
-
-\begin{mytable}
-\myitem{2017}{%
-\textbf{OpenBSD SlowCGI bug and solution report}
-
-\https{marc.info/?l=openbsd-tech&m=148336198719403}
-
-\keywords{C, OpenBSD, BSD}
-}
-\end{mytable}
-
-\begin{mytable}
-\myitem{2016}{%
-\textbf{OpenBSD CWM Window Manager bug and solution report}
-
-\https{marc.info/?l=openbsd-misc&m=147345347104702}
-
-\keywords{C, YACC, OpenBSD, BSD, X, Xorg, Window Manager}
-}
-\end{mytable}
-
-\begin{mytable}
-\myitem{2015}{%
-\textbf{Doom 3 on OpenBSD build issue and solution report}
-
-\https{github.com/dhewm/dhewm3/pull/113}
-
-\keywords{C++, CMake, OpenBSD, idTech4, Game Engine}
+\begin{itemize}
+  \item Built web-based applications with interactive maps and POI data,
+  integrating custom algorithms.
+  \item Developed web services for map tile and static maps generation,
+  and shortest-path calculations.
+  \item Created an Android survey application with multiple dynamic forms,
+  using \textbf{Java} and \textbf{SQLite}.
+\end{itemize}
 }
 \end{mytable}
 
@@ -235,27 +206,87 @@ Developing an Android app with so many different survey forms.
 
 \begin{mytable}
 \myitem{2015}{
-\textbf{MSc in Computer Science, Major in Intelligent Systems}
+\textbf{MSc in Computer Science} at
+Amirkabir University of Technology, Tehran, Iran
 
-Amirkabir University of Technology (Tehran Polytechnic), Tehran, Iran
+\textsc{Thesis}: Covering Points by Staircase Polygon
+}
+\myitem{2012}{
+\textbf{BSc in Computer Science} at
+Amirkabir University of Technology, Tehran, Iran
+
+\textsc{Thesis}: Fast Polynomial Time Reduction
+Between Four Different Problems in Binary Quadratic
+Equations
 }
 \end{mytable}
 
-\section{Awards and Honors}
+\section{Open Source Contribution}
+
+\begin{mytable}
+\myitem{2023}{%
+\textbf{OpenBSD UFS/FFS Kernel Module} ---
+Identified and proposed a patch for a \textbf{stability} bug
+
+\https{marc.info/?l=openbsd-tech&m=170382353030650}
+}
+
+\myitem{2022}{%
+\textbf{OpenBSD ACME Client} ---
+Identified and proposed a patch for a \textbf{security} bug
+
+\https{marc.info/?l=openbsd-tech&m=165144451324630}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2021}{%
+\textbf{Django Development Server} ---
+Identified and proposed a patch for a usability bug
+
+\https{github.com/django/django/pull/14250}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2017}{%
+\textbf{OpenBSD SlowCGI} ---
+Identified and proposed a patch for a \textbf{stability} bug
+
+\https{marc.info/?l=openbsd-tech&m=148336198719403}
+}
+\end{mytable}
+
+\begin{mytable}
+\myitem{2016}{%
+\textbf{OpenBSD CWM Window Manager} ---
+Identified and proposed a patch for a usability bug
+
+\https{marc.info/?l=openbsd-misc&m=147345347104702}
+}
+\end{mytable}
+
+\section{Academic Honors}
+
+\begin{mytable}\myitem{2015}{
+Ranked 2\textsuperscript{nd} in Ph.D. entrance exam
+\follownote{National University Entrance Exam}
+}\end{mytable}
+
+\begin{mytable}\myitem{2012}{
+Ranked 6\textsuperscript{th} in M.Sc. entrance exam
+\follownote{National University Entrance Exam}
+}\end{mytable}
+
+\section{Competitive Programming Achievements}
 
 \begin{mytable}\myitem{2017}{
 Ranked 474\textsuperscript{th} among over 25{ }000 contestants
 \codejamnote{0000000000201900}{Google CodeJam Round 2}
 }\end{mytable}
 
-\begin{mytable}\myitem{2015}{
-Ranked 2\textsuperscript{nd} in Ph.D. enterance exam
-\follownote{National University Entrance Exam}
-}\end{mytable}
-
 \begin{mytable}\myitem{2013}{
-Ranked as 2\textsuperscript{nd} university among all
-national universities
+Ranked 2\textsuperscript{nd} among all national universities
 \acmicpcnote{Tehran-2013}{ACM-ICPC Asia Tehran Regional Contest}
 }\end{mytable}
 
@@ -269,11 +300,6 @@ Ranked 1\textsuperscript{st} among 66 teams
 \acmicpcnote{Kanpur-2012}{ACM-ICPC Asia Kanpur Regional Contest}
 }\end{mytable}
 
-\begin{mytable}\myitem{2012}{
-Ranked 6\textsuperscript{th} in M.Sc. enterance exam
-\follownote{National University Entrance Exam}
-}\end{mytable}
-
 \begin{mytable}\myitem{2011}{
 Ranked 4\textsuperscript{th} among 76 teams
 \acmicpcnote{Tehran-2011}{ACM-ICPC Asia Tehran Regional Contest}
@@ -283,26 +309,17 @@ Ranked 4\textsuperscript{th} among 76 teams
 Rewarded as Silver in National Olympiad in Informatics
 }\end{mytable}
 
-\section{Programming Languages}
+\section{Technical Skills}
+
 \begin{itemize}
-\item C (C89/90, C99, C11, libevent, pthreads, yacc, lex)
-\item Python (Python 3.x, async)
-\item C++ (C++98, C++11, C++14)
-\item Java (Java 7, Java 8)
-\item C\# (.Net Framework 4.x, ASP.NET MVC, .Net Core 2.x \& 3.x)
-\item JavaScript (ES5.x, ES6)
-\item Assembly (6502, 8086, i386, amd64, intel/at\&t syntax, SIMD)
-\item UNIX Shell (sh, ksh, bash, sed, awk)
+\item Assembly, C, C++, Python, C\#, Java, JavaScript,
+Docker, Linux, Shell (bash), Django, Cython, NumPy
+
+\item Algorithm \& Data Structures, System Design, Database Design,
+Network Protocols, Concurrency (signal handling, messaging, locks)
+
+\item Agile Methodologies (Scrum, Kanban),
+V-Model (Verification and Validation Model)
 \end{itemize}
-
-\section{Languages}
-
-\begin{mytable}\myitem{Persian}{
-	Native
-}\end{mytable}
-
-\begin{mytable}\myitem{English}{
-	B2, TOEFL 79
-}\end{mytable}
 
 \end{document}
