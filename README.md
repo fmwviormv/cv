@@ -1,5 +1,11 @@
+## Moved to Codeberg
+
+New address:
+https://codeberg.org/alif/cv
+
+
 Ali Farzanrad's CV
-([PDF](../../releases/download/v7/ali_farzanrad-cv7.pdf))
+([PDF](../../releases/download/v9/ali_farzanrad-cv9.pdf))
 
 
 ## LISENCE
